@@ -1,0 +1,51 @@
+https://gea.esac.esa.int/archive/
+
+%-------------------------------------------------------
+
+SELECT *
+FROM gaiadr2.gaia_source
+WHERE 1=CONTAINS(
+POINT('ICRS',ra,dec),
+CIRCLE('ICRS', 268.4496, -34.8411, 0.8342))
+AND parallax>=3.4704 AND parallax<=3.6704
+ORDER BY parallax ASC
+
+%--------------------------------------------------------
+
+SELECT *
+FROM gaiadr2.gaia_source
+WHERE 1=CONTAINS(
+POINT('ICRS',ra,dec),
+CIRCLE('ICRS', 266.5105, -33.6582, 1))
+AND parallax>=3.4704 AND parallax<=3.6704
+ORDER BY parallax ASC
+
+%--------------------------------------------------------
+
+SELECT *
+FROM gaiadr2.gaia_source
+WHERE 1=CONTAINS(
+POINT('ICRS',ra,dec),
+CIRCLE('ICRS', 266.5105, -33.6582, 1.5))
+AND parallax>=3.4704 AND parallax<=3.6704
+ORDER BY parallax ASC
+
+%--------------------------------------------------------
+
+SELECT *
+FROM gaiadr2.gaia_source
+WHERE 1=CONTAINS(
+POINT('ICRS',ra,dec),
+CIRCLE('ICRS', 266.5105, -33.6582, 2))
+AND parallax>=3.4704 AND parallax<=3.6704
+ORDER BY parallax ASC
+
+%--------------------------------------------------------
+
+SELECT *
+FROM gaiadr2.gaia_source
+WHERE 1=CONTAINS(
+POINT('ICRS',ra,dec),
+CIRCLE('ICRS', 266.5105, -33.6582, 5))
+AND parallax>=3.4704 AND parallax<=3.6704
+ORDER BY parallax ASC

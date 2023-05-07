@@ -1,0 +1,1 @@
+plt.savefig('datos_gaia_messier_7.jpg',dpi=190)
